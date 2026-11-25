@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ぬぇたまる | 深海から深宇宙まで — 証明のかたちのホームページ（サンプル）</title>
+<style>
+  :root{
+    --bg:#070b18; --bg2:#0b1230; --ink:#dbe4ff; --muted:#8fa3d9;
+    --line:#26355f; --accent:#6ee7ff; --blue:#3b82f6; --card:#0d1531;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(180deg,#04060f 0%,var(--bg) 30%,var(--bg2) 100%);
+    color:var(--ink);font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;line-height:1.9}
+  code,.mono{font-family:"SF Mono",Menlo,Consolas,monospace}
+  main{max-width:760px;margin:0 auto;padding:24px 20px 96px}
+  .cover{min-height:52vh;display:flex;flex-direction:column;justify-content:center;border-bottom:1px dashed var(--line)}
+  .cover .depth{color:var(--accent);letter-spacing:.3em;font-size:.85rem}
+  h1{font-size:2rem;margin:.4em 0 .2em}
+  .cover p{color:var(--muted)}
+  section{padding:40px 0 8px;border-bottom:1px dashed var(--line)}
+  h2{font-size:1.15rem;margin:0 0 12px}
+  h2 .no{color:var(--accent);margin-right:.6em}
+  h2 .en{color:var(--muted);font-size:.85rem;font-weight:normal;margin-left:.6em}
+  table{border-collapse:collapse;width:100%;margin:12px 0}
+  th,td{border:1px solid var(--line);padding:8px 12px;text-align:left;vertical-align:top}
+  th{background:var(--card);white-space:nowrap;font-weight:normal;color:var(--muted)}
+  .axis{list-style:none;margin:12px 0;padding:0 0 0 18px;border-left:2px solid var(--line)}
+  .axis li{padding:6px 0 6px 14px;position:relative}
+  .axis li::before{content:"";position:absolute;left:-23px;top:1.05em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+  .axis .d{color:var(--accent);margin-right:1em}
+  details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 16px;margin:12px 0}
+  summary{cursor:pointer;color:var(--accent)}
+  .term{color:#7db4ff;border-bottom:1px dotted #7db4ff;cursor:pointer;position:relative}
+  .term .pop{display:none;position:absolute;left:0;bottom:1.7em;width:260px;max-width:70vw;
+    background:#0a1f4d;border:1px solid var(--blue);border-radius:8px;padding:10px 12px;
+    color:var(--ink);font-size:.88rem;line-height:1.6;z-index:5;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+  .term.open .pop{display:block}
+  a{color:var(--accent)}
+  .qed{text-align:right;color:var(--muted)}
+  footer{color:var(--muted);font-size:.85rem;padding-top:28px}
+</style>
+</head>
+<body>
+<main>
+
+  <!-- 表紙：派手さはここだけ -->
+  <div class="cover">
+    <div class="depth mono">0m — SURFACE</div>
+    <h1>ぬぇたまる</h1>
+    <p>深海から深宇宙までを、ひとつの座標軸でつなぐ場所。<br>
+    このページは「感想」ではなく「証明」のかたちで書かれています。</p>
+    <p class="mono" style="color:var(--muted)">scroll ↓ 潜る / 上がる</p>
+  </div>
+
+  <!-- 定義 -->
+  <section id="definition">
+    <h2><span class="no">定義 1</span>この子は誰か<span class="en">Definition</span></h2>
+    <table>
+      <tr><th>名前</th><td>ぬぇたまる（@Nuetamaru）</td></tr>
+      <tr><th>担当</th><td>おもろい担当。ゲーム、D&amp;D／TRPG、おしゃべりの入口（ハブ）</td></tr>
+      <tr><th>範囲</th><td>深海 −38,800m から深宇宙まで（縦軸ぜんぶ）</td></tr>
+      <tr><th>姉妹座標</th><td>なつよめる（おしとやか／Sky）、BOOCREO（デザイン）、日々余命（音楽）、小旅逍遥（学術・薄明書房）</td></tr>
+    </table>
+  </section>
+
+  <!-- 座標軸 -->
+  <section id="axis">
+    <h2><span class="no">座標軸</span>深海から深宇宙まで<span class="en">Axis</span></h2>
+    <ul class="axis">
+      <li><span class="d mono">深宇宙</span>これから作るもの（AI VTuber企画など）</li>
+      <li><span class="d mono">上空</span>学びのサイト（伸縮するノート）への扉</li>
+      <li><span class="d mono">0m</span>いまここ（表紙）</li>
+      <li><span class="d mono">−300m</span>プロフィール（定義 1）</li>
+      <li><span class="d mono">−600m</span>各アカウントへのリンク集</li>
+      <li><span class="d mono">−1,300m</span>工房（GitHub）への扉</li>
+      <li><span class="d mono">−38,800m</span>いちばん深いところ：案内と連絡先</li>
+    </ul>
+  </section>
+
+  <!-- 命題と証明 -->
+  <section id="proposition">
+    <h2><span class="no">命題 1</span>ぬぇたまるは入口（ハブ）である<span class="en">Proposition &amp; Proof</span></h2>
+    <p><strong>主張：</strong>初めての人は、まずぬぇたまるに来れば各方面へたどり着ける。</p>
+    <p><strong>証明：</strong>根拠は記録とリンクで示す。</p>
+    <ul>
+      <li>デザインの話 → <a href="#">BOOCREO</a>（リンクは後で本物に差し替え）</li>
+      <li>音楽の話 → <a href="#">日々余命</a></li>
+      <li>静かな話 → <a href="#">なつよめる</a></li>
+    </ul>
+    <details>
+      <summary>証明の詳しいところ（クリックで伸びる：伸縮の試し）</summary>
+      <p>ここが「伸縮する数学書」の Collapse（折りたたみ）方式の実験場。
+      最初は概要だけ見せて、知りたい人だけが深く潜れるようにする。
+      つまり？＝まず結論、例えば？＝ここを開く、という往復をページの仕組みにする。</p>
+    </details>
+    <p>単語の試し：このサイトは
+    <span class="term" id="term-pages">GitHub Pages<span class="pop"><strong>GitHub Pages</strong>（ギットハブ・ページズ）：GitHubに置いたファイルを、そのままホームページとして公開してくれる無料の仕組み。自分のサーバーは要らない。</span></span>
+    の上にあります。（青い単語を押すと説明が浮かぶ：青ポップの試し）</p>
+    <p class="qed mono">∎</p>
+  </section>
+
+  <!-- 反例・失敗 -->
+  <section id="counterexample">
+    <h2><span class="no">反例</span>ダメだったやつ<span class="en">Counterexample</span></h2>
+    <p>鍵アカウント運用は続かなかった（反例 1）。だからこの場所は公開で運用し、
+    変なフォローやDMは入口で一緒に仕分ける方式に変えた。失敗も証明の一部として残す。</p>
+  </section>
+
+  <footer>
+    <p class="mono">−38,800m — 案内（ガイドライン）と連絡先はここに置く予定。</p>
+    <p>サンプル版：骨格の確認用。中身とリンクは後から本物にしていく。</p>
+  </footer>
+
+</main>
+<script>
+  // 青ポップ：押したら開く、もう一度押したら閉じる
+  var t = document.getElementById('term-pages');
+  t.addEventListener('click', function(e){ e.stopPropagation(); t.classList.toggle('open'); });
+  document.addEventListener('click', function(){ t.classList.remove('open'); });
+</script>
+</body>
+</html>
